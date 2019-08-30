@@ -9,6 +9,10 @@ namespace YourFavoriteThingsExercise.Classes
         public string Brand { get; set; }
         public bool IsElectric { get; set; }
 
+        public Guitars()
+        {
+        }
+
         public void Play(string brand, bool elecOrAg)
         {
             if (elecOrAg == true)

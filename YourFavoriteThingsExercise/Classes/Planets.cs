@@ -12,14 +12,16 @@ namespace YourFavoriteThingsExercise.Classes
         Hypergiant,
         Blackhole,
     }
-    class Space
+    class Planets
     {
         public int NumOfMoons { get; set; }
+        public string NameOfPlanet { get; set; }
         public starSizes OrbitingWhichSizeStar { get; set; }
-
-        public Space()
+        public Planets(int numMoons, string nameOfPlanet)
         {
-
+            NumOfMoons = numMoons;
+            NameOfPlanet = nameOfPlanet;
+            Console.WriteLine($"You live on the planet {NameOfPlanet}, which has {NumOfMoons} moon(s).");
         }
     }
 }
