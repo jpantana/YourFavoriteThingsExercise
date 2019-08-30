@@ -8,10 +8,13 @@ namespace YourFavoriteThingsExercise.Classes
     {
         public int TasteScale { get; set; }
         public string Name { get; set; }
+        public string GenreOfFood { get; set; }
 
-        public Food()
+        public Food(string genreOfFood, string nameOfFood, int tasteScale)
         {
-
+            GenreOfFood = genreOfFood;
+            Name = nameOfFood;
+            TasteScale = tasteScale;
         }
     }
 }

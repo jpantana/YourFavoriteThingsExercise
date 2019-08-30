@@ -74,8 +74,23 @@ namespace YourFavoriteThingsExercise
             {
                 myPlanet.OrbitingWhichSizeStar = starSizes.Blackhole;
                 Console.WriteLine($"Your Planet is orbiting a {starSizes.Blackhole} star. Good luck!");
-
             }
+
+            Console.WriteLine("Let's talk food. What is your favorite genre of food?");
+            string genreOfFood = Console.ReadLine();
+            Console.WriteLine($"Ok! {genreOfFood} is delicious. Now, what is the name of your favorite dish from that genre?");
+            string nameOfFood = Console.ReadLine();
+            Console.WriteLine($"{nameOfFood} sounds amazing! On a scale from 1 to 10, how would you rate it?");
+            int tasteScale = Int32.Parse(Console.ReadLine());
+
+            var myFood = new Food(genreOfFood, nameOfFood, tasteScale);
+
+            Console.WriteLine("I also love movies. What about you? What's your favorite movie?");
+            string movieName = Console.ReadLine();
+            Console.WriteLine($"{movieName} is a classic. Remind me what genre it is?");
+            string movieGenre = Console.ReadLine();
+
+            var myMovies = new Movies(movieName, movieGenre);
         }
     }
 }

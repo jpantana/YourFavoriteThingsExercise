@@ -4,23 +4,15 @@ using System.Text;
 
 namespace YourFavoriteThingsExercise.Classes
 {
-    enum MovieGenre
-    {
-        Action=1,
-        Horror,
-        Comedy,
-        Romance,
-        Scifi,
-        Documentary
-    }
     class Movies
     {
         public string MovieName { get; set; }
-        public MovieGenre Genre { get; set; }
+        public string Genre { get; set; }
 
-        public Movies()
+        public Movies(string movieName, string movieGenre)
         {
-
+            MovieName = movieName;
+            Genre = movieGenre;
         }
     }
 }
